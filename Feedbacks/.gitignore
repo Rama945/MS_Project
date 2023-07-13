@@ -1,0 +1,15 @@
+# Node.js files
+node_modules/
+npm-debug.log
+
+# MongoDB files
+/data/
+/db/
+*.log
+*.lock
+*.journal
+*.wt
+*.pb
+
+# Environment variables
+.env
