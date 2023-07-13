@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "f0264df8-d646-4e44-9745-1f8f224bb110",
+		"name": "Nodejs reclamation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add reclamation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"customerID\":\"6491abd29da0fd80f98b5000\",\r\n   \"reclamation_message\":\"blablablabla\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7777/reclamation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7777",
+					"path": [
+						"reclamation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list reclamations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4545/feedbacks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4545",
+					"path": [
+						"feedbacks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete reclamation by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7777/reclamation/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7777",
+					"path": [
+						"reclamation",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get reclamation by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7777/reclamation/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7777",
+					"path": [
+						"reclamation",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

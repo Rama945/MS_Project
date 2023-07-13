@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "2f81a9de-49f2-4be0-ba3a-b6a0ad0b21f3",
+		"name": "Nodejs feedbacks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add feedback",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\":\"sarah\",\r\n   \"message\":\"blabla\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4545/feedback",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4545",
+					"path": [
+						"feedback"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list feedbacks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4545/feedbacks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4545",
+					"path": [
+						"feedbacks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete feedback by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4545/feedback/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4545",
+					"path": [
+						"feedback",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get feedback by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4545/feedback/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4545",
+					"path": [
+						"feedback",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
